@@ -1,0 +1,8 @@
+.DS_Store
+.pretty
+*-cache.lib
+*.stl
+*.kicad_pcb-bak
+*.net
+*.bak
+
