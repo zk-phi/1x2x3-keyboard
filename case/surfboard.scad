@@ -66,11 +66,23 @@ module single_keycap_preview () {
   }
 }
 
+module single_spacer_preview () {
+  $fn = 6;
+  cylinder(d = 5, h = 7);
+}
+
 module keycap_preview () {
   for (y = [0, 1])
     for (x = [0, 1, 2])
       translate([(x + 0.5) * $unit, (y + 0.5) * $unit])
         single_keycap_preview();
+}
+
+module spacer_preview () {
+  for (x = [0.5 * $unit, 2.5 * $unit])
+    for (y = [0, 2 * $unit])
+      translate ([x, y])
+        single_spacer_preview();
 }
 
 module pcb_preview () {
@@ -98,6 +110,9 @@ module preview () {
   translate([0, 0, 5.5])
     color([1, 1, 1])
       pcb_preview_kicad();
+  translate([0, 0, 3])
+    color([0.8, 0.8, 0.5])
+      spacer_preview();
   color([1, 1, 1, 0.3])
     linear_extrude(3) bottomplate();
 }
