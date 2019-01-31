@@ -17,6 +17,7 @@ $slop = 1;
 $promicro_height = 13 * $100mil + $slop / 2;
 $promicro_width  = 7 * $100mil + $slop;
 // TVBP06-B043CB-B
+$reset_height = 3.5 + $slop;
 $reset_width  = 6 + $slop;
 
 module kadomaru () {
@@ -26,7 +27,7 @@ module kadomaru () {
 module skrewed (left = false) {
   difference () {
     children();
-    for (x = [0, 3 * $unit])
+    for (x = [0.5 * $unit, 2.5 * $unit])
       for (y = [0, 2 * $unit])
         translate ([x, y])
           circle(r = $screw_hole);
@@ -42,9 +43,6 @@ module topplate (left = false) {
       for (y = [0, 1])
         translate([(x + 0.5) * $unit, (y + 0.5) * $unit])
           square([$switch_hole, $switch_hole], center = true);
-    // reset sw
-    translate([2.5 * $unit, 2 * $unit + $kadomaru_r / 2])
-      square([$reset_width, $kadomaru_r], center = true);
   }
 }
 
@@ -55,6 +53,9 @@ module bottomplate (left = false) {
     // promicro
    translate([1.5 * $unit, 2 * $unit + $kadomaru_r - $promicro_height / 2])
       square([$promicro_width, $promicro_height], center = true);
+    // reset sw
+    translate([2 * $unit - $slop / 2, $unit - $reset_width / 2])
+      square([$reset_height, $reset_width]);
   }
 }
 
