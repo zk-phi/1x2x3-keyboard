@@ -120,9 +120,9 @@ module preview () {
 module cut_model_100x100 (guide = false) {
   difference () {
     if (guide) square([100, 100]);
-    translate([4, 4]) {
+    translate([3, 3]) {
       translate([$kadomaru_r, $kadomaru_r]) topplate();
-      translate([$kadomaru_r, $kadomaru_r * 3 + 2 * $unit + $slop]) bottomplate();
+      translate([$kadomaru_r, $kadomaru_r * 3 + 2 * $unit + 3]) bottomplate();
     }
   }
 }
