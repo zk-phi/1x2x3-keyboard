@@ -127,6 +127,22 @@ module cut_model_100x100 (guide = false) {
   }
 }
 
+module cut_model_300x300 (guide = false) {
+  difference () {
+    if (guide) square([300, 300]);
+    translate([3, 3]) {
+        for (y = [0, 1, 2]) {
+        for (x = [0, 1, 2, 3]) {
+          translate ([($kadomaru_r * 3 + 3 * $unit) * x, ($kadomaru_r * 4 + 4 * $unit + 6) * y]) {
+            translate([$kadomaru_r, $kadomaru_r]) topplate();
+            translate([$kadomaru_r, $kadomaru_r * 3 + 2 * $unit + 3]) bottomplate();
+          }
+        }
+      }
+    }
+  } 
+}
+
 //cut_model_100x100(true);
 preview();
 //pcb_preview_kicad();
