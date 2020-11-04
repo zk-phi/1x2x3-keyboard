@@ -47,8 +47,8 @@ A tiny DIY keyboard for newbs.
      - B.Cu (配線 - 裏)
      - F.SilkS (シルク印刷 - 表)
      - B.SilkS (シルク印刷 - 裏)
-     - F.Mask (レジスト塗装のマスク - 表)
-     - B.Mask (レジスト塗装のマスク - 裏)
+     - F.Mask (レジスト塗装 - 表)
+     - B.Mask (レジスト塗装 - 裏)
      - Edge.Cuts (基板外形)
 
    - 一般オプション：
