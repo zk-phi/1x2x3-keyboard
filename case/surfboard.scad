@@ -36,7 +36,7 @@ module skrewed (left = false) {
 
 module topplate (left = false) {
   skrewed(left) difference () {
-    kadomaru () 
+    kadomaru ()
       square([$unit * 3, $unit * 2]);
     // switches
     for (x = [0, 1, 2])
@@ -140,9 +140,26 @@ module cut_model_300x300 (guide = false) {
         }
       }
     }
-  } 
+  }
 }
 
-//cut_model_100x100(true);
+module cut_model_150x100 (guide = false) {
+  difference () {
+    if (guide) square([150, 100]);
+    translate([3, 3]) {
+        for (y = [0/*, 1, 2*/]) {
+        for (x = [0, 1/*, 2, 3*/]) {
+          translate ([($kadomaru_r * 3 + 3 * $unit) * x, ($kadomaru_r * 4 + 4 * $unit + 6) * y]) {
+            translate([$kadomaru_r, $kadomaru_r]) topplate();
+            translate([$kadomaru_r, $kadomaru_r * 3 + 2 * $unit + 3]) bottomplate();
+          }
+        }
+      }
+    }
+  }
+}
+
+//cut_model_100x100();
+//cut_model_150x100();
+//cut_model_300x300();
 preview();
-//pcb_preview_kicad();
