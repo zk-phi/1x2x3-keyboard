@@ -77,6 +77,8 @@ A tiny DIY keyboard for newbs.
 
 7. 各製造業者の指定するファイル名に直す
 
+   便利スクリプトあります: `pcb/rename-elecrow.sh`
+
    elecrow の場合、
 
    - ガーバー
@@ -92,9 +94,9 @@ A tiny DIY keyboard for newbs.
      - `<プロジェクト名>-PTH.drl` => `<プロジェクト名>.TXT`
      - `<プロジェクト名>-NPTH.drl` => `<プロジェクト名>-NPTH.TXT`
 
-   と改名して、 zip に固める (`pcb/rename-elecrow.sh` 参照)。
+   と改名して、 zip に固めれば ok
 
-   ファイルが足りない場合は手順を確認してやり直してください。
+   ファイルが足りない場合は手順を確認してやり直してください
 
 8. 基板製造業者のオーダーページを開いて、ガーバーをアップロード
 
