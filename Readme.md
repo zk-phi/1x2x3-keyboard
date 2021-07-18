@@ -6,6 +6,18 @@ A tiny DIY keyboard for newbs.
 
 実際にキーボードの組み立てを体験しながら自作キーボードに入門してもらえるよう、 [同人誌](https://riconken.bitbucket.io/hifumi/) の内容に合わせて設計しました。
 
+## ファームウェア
+
+ビルド済みのファームウェアのダウンロード：
+
+- [test キーマップ](./firmware/hifumi_test.hex)
+  - 動作確認のためのキーマップです
+
+- [default キーマップ](./firmware/hifumi_default.hex)
+  - スクリーンショット (PrScr) など実用的なキーが配置されたキーマップです
+
+ソースコードからビルドしたい場合は [QMK Firmware の公式リポジトリ](https://github.com/qmk/qmk_firmware) を参照してください。
+
 ## 組み立て
 
 わかる人向けの近道ガイド。丁寧な解説は同人誌の方をどうぞ。

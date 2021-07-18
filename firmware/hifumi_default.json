@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "notes": "",
+  "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
+  "keyboard": "hifumi",
+  "keymap": "default",
+  "layout": "LAYOUT",
+  "layers": [
+    [
+      "LT(1,KC_F5)",
+      "KC_UP",
+      "LT(2,KC_PSCR)",
+      "KC_LEFT",
+      "KC_DOWN",
+      "KC_RGHT"
+    ],
+    [
+      "KC_TRNS",
+      "KC_PGUP",
+      "MO(3)",
+      "KC_HOME",
+      "KC_PGDN",
+      "KC_END"
+    ],
+    [
+      "MO(3)",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS",
+      "KC_TRNS"
+    ],
+    [
+      "KC_TRNS",
+      "RGB_TOG",
+      "KC_TRNS",
+      "RGB_M_SN",
+      "RGB_M_P",
+      "RGB_HUI"
+    ]
+  ],
+  "author": ""
+}
