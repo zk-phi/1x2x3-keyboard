@@ -1,10 +1,10 @@
 # Hifumi Keyboard
 
-初心者向け自作キーボード基板＆プレートです。
+初心者向け自作キーボードキットです。
 
 A tiny DIY keyboard for newbs.
 
-[同人誌](https://riconken.bitbucket.io/hifumi/) の内容を実際に組み立てながら体験してもらえるように設計しました。
+実際にキーボードの組み立てを体験しながら自作キーボードに入門してもらえるよう、 [同人誌](https://riconken.bitbucket.io/hifumi/) の内容に合わせて設計しました。
 
 ## 組み立て
 
