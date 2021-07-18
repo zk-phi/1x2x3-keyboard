@@ -8,12 +8,12 @@ A tiny DIY keyboard for newbs.
 
 ## ファームウェア
 
-ビルド済みのファームウェアのダウンロード：
+ビルド済みのファームウェアのダウンロード (右クリックから保存してください)：
 
-- [test キーマップ](./firmware/hifumi_test.hex)
+- [test キーマップ](https://raw.githubusercontent.com/zk-phi/1x2x3-keyboard/master/firmware/hifumi_test.hex)
   - 動作確認のためのキーマップです
 
-- [default キーマップ](./firmware/hifumi_default.hex)
+- [default キーマップ](https://raw.githubusercontent.com/zk-phi/1x2x3-keyboard/master/firmware/hifumi_default.hex)
   - スクリーンショット (PrScr) など実用的なキーが配置されたキーマップです
 
 ソースコードからビルドしたい場合は [QMK Firmware の公式リポジトリ](https://github.com/qmk/qmk_firmware) を参照してください。
